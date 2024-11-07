@@ -231,19 +231,19 @@
                   <a class="nav-link active p-0" aria-current="page" href="index.html">Trang chủ</a>
                 </li>
                 <li class="nav-item px-3">
-                  <a class="nav-link p-0" href="index.html">Giới thiệu</a>
+                  <a class="nav-link p-0" href="about.html">Giới thiệu</a>
                 </li>
                 <li class="nav-item px-3">
-                  <a class="nav-link p-0" href="index.html">Sản phẩm khuyến mãi</a>
+                  <a class="nav-link p-0" href="list-product.html">Sản phẩm khuyến mãi</a>
                 </li>
                 <li class="nav-item px-3">
-                  <a class="nav-link p-0" href="index.html">Điểm tin</a>
+                  <a class="nav-link p-0" href="blog.html">Điểm tin</a>
                 </li>
 
               </ul>
             </div>
           </div>
-          <div class="search d-lg-block">
+          <div class="search  d-none">
             <div class="position-relative">
               <div class="d-flex">
                 <div class="me-3 position-relative">
@@ -281,7 +281,7 @@
               </div>
             </div>
 
-            <div>
+            <div class="d-none">
               <img src="images/giohangto.svg" alt="">
             </div>
           </div>
@@ -311,6 +311,26 @@
               </div>
             </div>
           </div>
+          <script>
+            const countDownDate = new Date("2024/11/31 23:59:59").getTime();
+            const countdownFunction = setInterval(function () {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.querySelectorAll(".time-count-down")[0].innerText = days;
+            document.querySelectorAll(".time-count-down")[1].innerText = hours;
+            document.querySelectorAll(".time-count-down")[2].innerText = minutes;
+            document.querySelectorAll(".time-count-down")[3].innerText = seconds;
+            if (distance < 0) {
+                clearInterval(countdownFunction);
+                document.querySelectorAll(".time-count-down").forEach(el => el.innerText = "00");
+            }
+        }, 1000);
+
+    </script>
         </div>
 
         <div class="col-md-4">
@@ -447,6 +467,203 @@
   </section>
 
 
+  <section class="thele-cuocthi position-relative">
+    <div class="thele-cuocthichia position-absolute z-1">
+      <img class="w-100" src="images/chia.svg" alt="">
+    </div>
+    <img class="position-absolute tronhome1" src="images/tronghome1.svg" alt="">
+    <img class="position-absolute tronhome2" src="images/tronhome2.svg" alt="">
+    <div class="container position-relative z-3">
+      <div class="row">
+        <div class="col-md-3 px-0">
+          <div class="mb-4">
+            <h2 class="text-uppercase fw-bold">thể lệ <span style="color: rgba(246, 39, 23, 1);">cuộc thi</span>
+              <br> & <span style="color:rgba(255, 202, 0, 1)">quay thưởng</span>
+            </h2>
+            <div class="quay_border">
+
+            </div>
+          </div>
+          <div class="nav nav-tabs mb-3 d-flex flex-column tab-thele border-0" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+              type="button" role="tab" aria-controls="nav-home" aria-selected="true">Thể lệ cuộc thi <img
+                src="images/denright.svg" alt=""></button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+              type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Thể lệ quay thưởng <img
+                src="images/denright.svg" alt=""></button>
+          </div>
+        </div>
+
+        <div class="col-md-9 px-0">
+          <div class="tab-content tab-thele-noidung  border-0 bg-light" id="nav-tabContent">
+            <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+              <div style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
+                <strong>1. Đối tượng tham gia:</strong>
+                <p>Mọi khách hàng trên toàn quốc mua sản phẩm có dán tem chống giả VTrue và tiến hành xác thực tem.</p>
+              </div>
+
+              <div class="py-4" style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
+                <strong>2. Thời gian diễn ra:</strong>
+                <ul class="mb-0 pb-0">
+                  <li>Chương trình bắt đầu từ ngày 01/11/2024 và kết thúc vào ngày 30/04/2025.</li>
+                  <li class="mb-0">Quay thưởng sẽ diễn ra vào 20h00 thứ Năm đầu tiên của mỗi tháng trong suốt thời gian
+                    chương trình.</li>
+                </ul>
+              </div>
+
+              <div class="py-4" style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
+                <strong>3. Cách thức tham gia:</strong>
+                <ul class="mb-0 pb-0">
+                  <li>Khách hàng sau khi mua sản phẩm có dán tem chống giả VTrue, tiến hành xác thực bằng cách quét mã
+                    QR hoặc gửi tin nhắn theo hướng dẫn trên tem.</li>
+                  <li>Mỗi mã tem xác thực thành công sẽ tự động được ghi nhận là một mã dự thưởng trong hệ thống.</li>
+                  <li>Khách hàng có thể xác thực nhiều lần với các sản phẩm khác nhau để tăng cơ hội trúng thưởng.</li>
+                </ul>
+              </div>
+
+              <div class="pt-3 pb-2" style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
+                <strong>4. Cơ cấu giải thưởng:</strong>
+                <ul class="mb-0 pb-0">
+                  <li>Giải nhất: 1 giải trị giá 50.000.000 đ</li>
+                  <li>Giải nhì: 1 giải trị giá 20.000.000 đ</li>
+                  <li>Giải ba: 1 giải trị giá 10.000.000 đ</li>
+                  <li>Giải khuyến khích: 10 giải trị giá 1.000.000 đ mỗi giải</li>
+                  <li>Giải đặc biệt: 1 giải trị giá 10.000.000 đ cho khách hàng có nhiều mã dự thưởng nhất trong suốt
+                    chương trình</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile">
+              <div style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
+                <strong>1. Đối tượng tham gia:</strong>
+                <p>Mọi khách hàng trên toàn quốc mua sản phẩm có dán tem chống giả VTrue và tiến hành xác thực tem.</p>
+              </div>
+
+              <div class="py-4" style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
+                <strong>2. Thời gian diễn ra:</strong>
+                <ul class="mb-0 pb-0">
+                  <li>Chương trình bắt đầu từ ngày 01/11/2024 và kết thúc vào ngày 30/04/2025.</li>
+                  <li class="mb-0">Quay thưởng sẽ diễn ra vào 20h00 thứ Năm đầu tiên của mỗi tháng trong suốt thời gian
+                    chương trình.</li>
+                </ul>
+              </div>
+
+              <div class="py-4" style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
+                <strong>3. Cách thức tham gia:</strong>
+                <ul class="mb-0 pb-0">
+                  <li>Khách hàng sau khi mua sản phẩm có dán tem chống giả VTrue, tiến hành xác thực bằng cách quét mã
+                    QR hoặc gửi tin nhắn theo hướng dẫn trên tem.</li>
+                  <li>Mỗi mã tem xác thực thành công sẽ tự động được ghi nhận là một mã dự thưởng trong hệ thống.</li>
+                  <li>Khách hàng có thể xác thực nhiều lần với các sản phẩm khác nhau để tăng cơ hội trúng thưởng.</li>
+                </ul>
+              </div>
+
+              <div class="pt-3 pb-2" style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
+                <strong>4. Cơ cấu giải thưởng:</strong>
+                <ul class="mb-0 pb-0">
+                  <li>Giải nhất: 1 giải trị giá 50.000.000 đ</li>
+                  <li>Giải nhì: 1 giải trị giá 20.000.000 đ</li>
+                  <li>Giải ba: 1 giải trị giá 10.000.000 đ</li>
+                  <li>Giải khuyến khích: 10 giải trị giá 1.000.000 đ mỗi giải</li>
+                  <li>Giải đặc biệt: 1 giải trị giá 10.000.000 đ cho khách hàng có nhiều mã dự thưởng nhất trong suốt
+                    chương trình</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="py-md-5 py-3">
+    <div class="d-flex flex-column align-items-center pb-4">
+      <h2 class="fw-bold">ĐIỂM TIN THỜI GIAN THỰC</h2>
+      <div class="border-tintuc-title">
+
+      </div>
+    </div>
+    <div class="container-fluid padding-side d-flex align-items-center flex-column" data-aos="fade-up">
+      <div lass="list-blog mt-3">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="blog-item">
+              <div class="blog-img">
+                <a href="">
+                  <img class="w-100" src="images/blog1.png" alt="">
+                </a>
+              </div>
+              <div class="blog-content">
+                <p class="blog-date"><span>10/10/2024</span> - <span>14:36</span></p>
+                <a href="">
+                  <p class="blog-name fw-bold">Thủ tướng đề nghị Hàn Quốc cấp khoản vay ưu đãi để xây đường sắt, thủ
+                    tướng đề nghị Hàn Quốc cấp khoản vay ưu cao tốc</p>
+                </a>
+                <a href="">
+                  <p class="blog-description">
+                    Bên cạnh đề xuất mở cửa thị trường cho hàng hóa Việt Nam, Thủ tướng đề nghị , Bên cạnh đề xuất mở
+                    cửa thị trường cho hàng hóa Việt Nam, Thủ tướng đề nghị...
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="blog-item">
+              <div class="blog-img">
+                <img class="w-100" src="images/blog2.png" alt="">
+              </div>
+              <div class="blog-content">
+                <p class="blog-date"><span>10/10/2024</span> - <span>14:36</span></p>
+                <p class="blog-name fw-bold">Thủ tướng đề nghị Hàn Quốc cấp khoản vay ưu đãi để xây đường sắt, cao tốc
+                </p>
+                <p class="blog-description">
+                  Bên cạnh đề xuất mở cửa thị trường cho hàng hóa Việt Nam, Thủ tướng đề nghị...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="blog-item">
+              <div class="blog-img">
+                <img class="w-100" src="images/blog3.png" alt="">
+              </div>
+              <div class="blog-content">
+                <p class="blog-date"><span>10/10/2024</span> - <span>14:36</span></p>
+                <p class="blog-name fw-bold">Thủ tướng đề nghị Hàn Quốc cấp khoản vay ưu đãi để xây đường sắt, cao tốc
+                </p>
+                <p class="blog-description">
+                  Bên cạnh đề xuất mở cửa thị trường cho hàng hóa Việt Nam, Thủ tướng đề nghị...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="blog-item">
+              <div class="blog-img">
+                <img class="w-100" src="images/blog4.png" alt="">
+              </div>
+              <div class="blog-content">
+                <p class="blog-date"><span>10/10/2024</span> - <span>14:36</span></p>
+                <p class="blog-name fw-bold">Thủ tướng đề nghị Hàn Quốc cấp khoản vay ưu đãi để xây đường sắt, cao tốc
+                </p>
+                <p class="blog-description">
+                  Bên cạnh đề xuất mở cửa thị trường cho hàng hóa Việt Nam, Thủ tướng đề nghị...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
@@ -463,7 +680,7 @@
           </div>
           <p class="mb-0">Báo điện tử - Đảng Cộng sản Việt Nam</p>
         </div>
-        
+
 
         <div class="text-center footer-logo-items">
           <div class="footer-logo-items-img">
@@ -474,8 +691,8 @@
 
         <div class="text-center footer-logo-items">
           <div class="footer-logo-items-img">
-          <img class="footer-logo3" src="images/index/dms.png" alt="">
-         </div>
+            <img class="footer-logo3" src="images/index/dms.png" alt="">
+          </div>
           <p class="mb-0">Tổng cục Quản lý thị trường</p>
         </div>
 

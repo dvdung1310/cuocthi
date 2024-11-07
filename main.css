@@ -306,6 +306,11 @@
     height: 100px;
 }
 
+.quay_border{
+    height: 1px;
+    width: 48%;
+    background-color: rgba(62, 62, 62, 1);
+}
 
 .footer-logo-items p {
     font-size: 14px;
@@ -1115,10 +1120,244 @@
 
 .all-cart-product-checkbox {}
 
+.tab-thele .nav-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    border-radius: 0;
+    color: #000;
+    border: none !important;
+    background-color: #fff;
+}
 
+.tab-thele .active{
+    background-color: rgba(255, 202, 0, 1) !important;
+    color: #fff !important;
+}
 
+.tab-thele-noidung .tab-pane{
+    border: 5px solid rgba(255, 202, 0, 1);
+    border-radius: 10px;
+    padding: 20px 20px;
+}
 
+.thele-cuocthi{
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.thele-cuocthichia{
+    top: 10%;
+    left:0;
+    right: 0;
+    height: 50%;
+    width: 100%;
+}
 
+.tronhome1{
+    width: 10%;
+    left: 0;
+    bottom: 0%;
+    opacity: 0.1;
+}
+
+.tronhome2{
+    width: 15%;
+    bottom: -10%;
+    left: 0;
+    opacity: 0.1;
+}
+
+.border-tintuc-title{
+    height: 1px;
+    width: 20%;
+    background-color: #FFC700;
+}
+.about-live{
+    padding: 100px;
+}
+.luong1{
+    right: -15%;
+    top: -10%;
+}
+
+.luong2{
+    top: 25px;
+    right: -15%;
+}
+.luong3{
+    right: -15%;
+    top:45px;
+}
+.live-ct1{
+    background: rgba(255, 202, 0, 1);
+    padding: 5px 10px;
+    color: #000;
+    font-weight: 800;
+    line-height: 40px;
+    font-size: 35px;
+    width: max-content;
+}
+
+.live-ct2{
+    background: rgba(246, 39, 23, 1);
+    padding: 5px 10px;
+    color: #fff;
+    margin-left: 60px;
+    font-weight: 800;
+    line-height: 40px;
+    font-size: 35px;
+}
+.live-ct-text{
+    font-size: 20px;
+}
+.live-ct-text span{
+    color: rgba(75, 120, 255, 1);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.baybay1{
+    top: 5%;
+    left: 15%;
+}
+
+.baybay2{
+    top: 5%;
+    right: 15%;
+}
+
+.baybay3{
+    top: 50%;
+    right: 0%;
+    z-index: 1;
+}
+
+.baybay4{
+    bottom: 5%;
+    right: 10%;
+}
+
+.baybay5{
+    bottom: 5%;
+    left: 15%;
+}
+
+.baybay6{
+    top: 50%;
+    left: -10%;
+}
+
+.about-title1{
+    font-size: 28px;
+    padding: 20px;
+    background: rgba(255, 239, 146, 1);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-title2{
+    font-size: 28px;
+    padding: 20px;
+    background: rgba(255, 248, 206, 1);
+    font-weight: bold;
+}
+
+.muc-tieu{
+    font-size: 40px;
+    font-weight: bold;
+}
+.muc-tieu-border{
+    width: 35%;
+    height: 2px;
+    background-color: rgba(255, 202, 0, 1);
+    margin-top: 20px;
+}
+
+.about-logo-container{
+    background-color: rgba(254, 212, 2, 0.1);
+}
+.about-tochuc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.about-tochuc-border{
+    width: 10%;
+    height: 2px;
+    background-color: rgba(255, 202, 0, 1);
+    margin-top: 15px;
+}
+.contact-title{
+    font-size: 35px;
+    font-weight: bold;
+}
+.border-contact{
+    height: 1px;
+    width: 130%;
+    background-color: rgba(255, 202, 0, 1);
+    margin-top: 20px;
+}
+.conact-item1{
+    background: rgba(255, 242, 194, 1);
+    padding: 30px;
+    border-radius: 5px;
+}
+.conact-item2{
+    background: rgba(255, 242, 194, 1);
+    padding: 30px;
+    border-radius: 5px;
+}
+.conact-item-success{
+    background: rgba(255, 242, 194, 1);
+    padding: 70px 30px;
+    border-radius: 5px;
+}
+.contact-item1-title{
+    background: rgba(255, 234, 164, 1);
+    color: #000;
+    padding: 10px ;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: max-content;
+}
+
+.contact-radio label{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.contact-item2-title{
+    border-bottom:1px solid rgba(255, 202, 0, 1);
+}
+
+.contact-item-user label{
+    font-style: italic;
+}
+
+.cart-buy-mua{
+    background-color: rgba(255, 202, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.cart-price-sum{
+    font-size: 18px;
+}
+
+.cart-price-sum span{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(246, 39, 23, 1);
+}
 
 
 

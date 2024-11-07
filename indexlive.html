@@ -247,7 +247,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="search  d-none">
+                    <div class="search d-none">
                         <div class="position-relative">
                             <div class="d-flex">
                                 <div class="me-3 position-relative">
@@ -265,311 +265,478 @@
         </nav>
     </header>
 
-    <section id="cart-product" class="py-md-5 py-3">
-        <div class="container-fluid padding-side" data-aos="fade-up">
-            <h3 class="fw-bold">giỏ hàng của bạn</h3>
+    <section class="">
+        <img class="w-100" src="images/banner-no-product.png" alt="">
+    </section>
 
-            <div class="cart-product-table">
-                <div class="mt-4">
-                    <table class="custom-table">
-                        <thead>
-                            <tr>
-                                <th class="table-checkbox-thead table-checkbox-input">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <input type="checkbox" checked="checked">
-                                    </div>
-                                </th>
-                                <th>Sản phẩm</th>
-                                <th>Đơn giá</th>
-                                <th>Số lượng</th>
-                                <th>Thành tiền</th>
-                                <th>Xóa</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="table-checkbox table-checkbox-input">
-                                    <div class="d-flex align-items-center justify-content-center aaa">
-                                        <input type="checkbox" checked="checked">
-                                    </div>
-                                </td>
-                                <td class="table-sp">
-                                    <div class="d-flex align-items-center h-100">
-                                        <img class="table-img me-3" src="images/sp-chitiet1.jfif" alt="">
-                                        <p class="mb-0 fw-bold">Điện thoại Samsung Galaxy A05 6GB/128GB</p>
-                                    </div>
-                                </td>
-                                <td>
-                                    <p class="text-decoration-line-through mb-1 money1">20.000.000đ</p>
-                                    <p class="mb-0 fw-bold money2">14.000.000 đ</p>
-                                </td>
-                                <td>
-                                    <div class="input-container">
-                                        <button class="btn-minus" onclick="decrease(this)">-</button>
-                                        <input type="number" class="number-input" value="1" min="1" />
-                                        <button class="btn-plus" onclick="increase(this)">+</button>
-                                    </div>
-                                </td>
-                                <td><span class="total-money">28.000.000 đ</span></td>
-                                <td><img src="images/xoa.svg" alt=""></td>
-                            </tr>
 
-                            <tr>
-                                <td class="table-checkbox table-checkbox-input">
-                                    <div class="d-flex align-items-center justify-content-center aaa">
-                                        <input type="checkbox" checked="checked">
-                                    </div>
-                                </td>
-                                <td class="table-sp">
-                                    <div class="d-flex align-items-center h-100">
-                                        <img class="table-img me-3" src="images/sp-chitiet1.jfif" alt="">
-                                        <p class="mb-0 fw-bold">Điện thoại Samsung Galaxy A05 6GB/128GB</p>
-                                    </div>
-                                </td>
-                                <td>
-                                    <p class="text-decoration-line-through mb-1 money1">20.000.000đ</p>
-                                    <p class="mb-0 fw-bold money2">14.000.000 đ</p>
-                                </td>
-                                <td>
-                                    <div class="input-container">
-                                        <button class="btn-minus" onclick="decrease(this)">-</button>
-                                        <input type="number" class="number-input" value="1" min="1" />
-                                        <button class="btn-plus" onclick="increase(this)">+</button>
-                                    </div>
-                                </td>
-                                <td><span class="total-money">28.000.000 đ</span></td>
-                                <td><img src="images/xoa.svg" alt=""></td>
-                            </tr>
-
+    <section class="about-live position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="d-flex flex-column align-items-center justify-content-center h-100">
+                        <div class="live-ct position-relative">
+                            <p class="text-uppercase mb-0 live-ct1">chương trình</p>
+                            <p class="text-uppercase live-ct2">đang diễn ra</p>
+                            <img class="luong1 position-absolute" src="images/luong1.svg" alt="">
+                            <img class="luong2 position-absolute" src="images/luong2.svg" alt="">
+                            <img class="luong3 position-absolute" src="images/luong31.svg" alt="">
+                        </div>
+    
+                        <div class="live-ct-text text-center">
+                            Chương trình diễn ra vào <span>20h</span> <br>
+                            <span>thứ năm tuần đầu tiên</span> hàng tháng
                             
-                        </tbody>
-                    </table>
-
-                    <div class="all-cart-product">
-                        <div class="row w-100">
-                            <div class="d-flex align-items-center justify-content-start all-cart-product-checkbox col-md-4 ps-5">
-                                <input type="checkbox" class="me-2" checked="checked">
-                                <span class="me-3">chọn tất cả (2)</span>
-                                <span>Xóa</span>
-                            </div>
-
-                            <div class="col-md-8 d-flex justify-content-end">
-                                <div class="cart-price-sum d-flex flex-column align-items-end justify-content-center">
-                                    <div>
-                                        40.000.000đ
-                                    </div>
-
-                                    <div>
-                                        Tổng thanh toán (2 sản phẩm): <span>28.000.000đ</span>
-                                    </div>
-                                </div>
-
-                                <div class="cart-buy-mua">
-                                    Mua hàng
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
 
-            </div>
-
-            <div class="mt-3 mt-md-5">
-                <h4 class="fw-bold">có thể bạn cũng thích</h4>
-                <div class="list-product mt-3">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="product-item">
-                                <div class="product-img">
-                                    <img class="w-100" src="images/sp1.jfif" alt="">
-                                    <div class="product-abs-sale">giảm <br>
-                                        <p class="sale mb-0">30%</p>
-                                    </div>
-                                </div>
-    
-                                <div class="product-content">
-                                    <p class="product-name fw-bold">Điện thoại Samsung Galaxy A05 6GB/128GB</p>
-                                    <p class="product-price">
-                                        <span class="product-price-sale">14.000.000 đ</span>
-                                    <p class="product-price-original-p"><span class="product-price-original">20.000.000
-                                            đ</span> <span class="ms-3 product-price-percentage">-30%</span></p>
-                                    </p>
-    
-                                    <div class="d-flex align-items-center product-thanh-container">
-                                        <img class="product-lua" src="images/lua.svg" alt="">
-                                        <div class="product-thanh">
-                                            <span class="position-relative z-2">còn 10/15 suất</span>
-                                            <div class="product-thanh-con">
-    
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="d-flex align-items-center">
-                                        <div class="product-cart">
-                                            <div>
-                                                <img src="images/cartproduct.svg" alt="">
-                                            </div>
-                                            <p class="mb-0">Thêm vào giỏ hàng</p>
-                                        </div>
-    
-                                        <div class="product-button">
-                                            Mua ngay
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="col-md-3">
-                            <div class="product-item">
-                                <div class="product-img">
-                                    <img class="w-100" src="images/sp2.jfif" alt="">
-                                    <div class="product-abs-sale">giảm <br>
-                                        <p class="sale mb-0">30%</p>
-                                    </div>
-                                </div>
-    
-                                <div class="product-content">
-                                    <p class="product-name fw-bold">Điện thoại Samsung Galaxy A05 6GB/128GB</p>
-                                    <p class="product-price">
-                                        <span class="product-price-sale">14.000.000 đ</span>
-                                    <p class="product-price-original-p"><span class="product-price-original">20.000.000
-                                            đ</span> <span class="ms-3 product-price-percentage">-30%</span></p>
-                                    </p>
-    
-                                    <div class="d-flex align-items-center product-thanh-container">
-                                        <img class="product-lua" src="images/lua.svg" alt="">
-                                        <div class="product-thanh">
-                                            <span class="position-relative z-2">còn 10/15 suất</span>
-                                            <div class="product-thanh-con">
-    
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="d-flex align-items-center">
-                                        <div class="product-cart">
-                                            <div>
-                                                <img src="images/cartproduct.svg" alt="">
-                                            </div>
-                                            <p class="mb-0">Thêm vào giỏ hàng</p>
-                                        </div>
-    
-                                        <div class="product-button">
-                                            Mua ngay
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="col-md-3">
-                            <div class="product-item">
-                                <div class="product-img">
-                                    <img class="w-100" src="images/sp3.jfif" alt="">
-                                    <div class="product-abs-sale">giảm <br>
-                                        <p class="sale mb-0">30%</p>
-                                    </div>
-                                </div>
-    
-                                <div class="product-content">
-                                    <p class="product-name fw-bold">Điện thoại Samsung Galaxy A05 6GB/128GB</p>
-                                    <p class="product-price">
-                                        <span class="product-price-sale">14.000.000 đ</span>
-                                    <p class="product-price-original-p"><span class="product-price-original">20.000.000
-                                            đ</span> <span class="ms-3 product-price-percentage">-30%</span></p>
-                                    </p>
-    
-                                    <div class="d-flex align-items-center product-thanh-container">
-                                        <img class="product-lua" src="images/lua.svg" alt="">
-                                        <div class="product-thanh">
-                                            <span class="position-relative z-2">còn 10/15 suất</span>
-                                            <div class="product-thanh-con">
-    
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="d-flex align-items-center">
-                                        <div class="product-cart">
-                                            <div>
-                                                <img src="images/cartproduct.svg" alt="">
-                                            </div>
-                                            <p class="mb-0">Thêm vào giỏ hàng</p>
-                                        </div>
-    
-                                        <div class="product-button">
-                                            Mua ngay
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="col-md-3">
-                            <div class="product-item">
-                                <div class="product-img">
-                                    <img class="w-100" src="images/sp4.jfif" alt="">
-                                    <div class="product-abs-sale">giảm <br>
-                                        <p class="sale mb-0">30%</p>
-                                    </div>
-                                </div>
-    
-                                <div class="product-content">
-                                    <p class="product-name fw-bold">Điện thoại Samsung Galaxy A05 6GB/128GB</p>
-                                    <p class="product-price">
-                                        <span class="product-price-sale">14.000.000 đ</span>
-                                    <p class="product-price-original-p"><span class="product-price-original">20.000.000
-                                            đ</span> <span class="ms-3 product-price-percentage">-30%</span></p>
-                                    </p>
-    
-                                    <div class="d-flex align-items-center product-thanh-container">
-                                        <img class="product-lua" src="images/lua.svg" alt="">
-                                        <div class="product-thanh">
-                                            <span class="position-relative z-2">còn 10/15 suất</span>
-                                            <div class="product-thanh-con">
-    
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="d-flex align-items-center">
-                                        <div class="product-cart">
-                                            <div>
-                                                <img src="images/cartproduct.svg" alt="">
-                                            </div>
-                                            <p class="mb-0">Thêm vào giỏ hàng</p>
-                                        </div>
-    
-                                        <div class="product-button">
-                                            Mua ngay
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-md-7 position-relative z-2">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img class="w-100" src="images/TV.svg" alt="">
                     </div>
                 </div>
             </div>
         </div>
 
-        <script>
-            function increase(button) {
-                let input = button.previousElementSibling;
-                input.value = parseInt(input.value) + 1;
-            }
-
-            function decrease(button) {
-                let input = button.nextElementSibling;
-                if (input.value > 1) {
-                    input.value = parseInt(input.value) - 1;
-                }
-            }
-        </script>
-        
-
+        <img class="baybay1 position-absolute" src="images/baybaybong.svg" alt="">
+        <img class="baybay2 position-absolute" src="images/baybaybong.svg" alt="">
+        <img class="baybay3 position-absolute" src="images/baybaybong.svg" alt="">
+        <img class="baybay4 position-absolute" src="images/baybaybong.svg" alt="">
+        <img class="baybay5 position-absolute" src="images/baybaybong.svg" alt="">
+        <img class="baybay6 position-absolute" src="images/baybaybong.svg" alt="">
     </section>
+
+    <section class="container">
+        <div class="row d-flex justify-content-center mt-5">
+            <div class="col-md-4 d-flex justify-content-center">
+              <div class="thamgiacuocthi d-flex align-items-center  w-100">
+                <div class="me-3">
+                  <img width="39px" src="images/Plain.svg" alt="">
+                </div>
+    
+                <div>
+                  <div>
+                    Tham gia Cuộc thi
+                  </div>
+                  <span class="fw-bold">Chống hàng giả và lừa đảo trực tuyến</span>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <div>
+                <h3 class="text-uppercase fw-bold pb-2 " 
+                style="border-bottom: 1.5px solid rgba(246, 39, 23, 1); width: max-content;">
+                    Sản phẩm nổi bật</h3>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="product-relate-item">
+                        <div class="row align-items-center d-flex">
+                            <div class="col-md-4 align-items-center d-flex">
+                                <img class="w-100 product-relate-item-img" src="images/spdetail1.jfif" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <p class="product-name2 fw-bold">Điện thoại Samsung Galaxy A05 6GB/128GB</p>
+                                <p class="product-price">
+                                    <span class="product-price-sale2">14.000.000 đ</span>
+                                    <br>
+                                    <span class="product-price-original-p">
+                                        <span class="product-price-original2">20.000.000 đ</span>
+                                        <span class="ms-3 product-price-percentage">-30%</span>
+                                    </span>
+                                </p>
+                                <div class="d-flex align-items-center product-thanh-container">
+                                    <img class="product-lua" src="images/lua.svg" alt="">
+                                    <div class="product-thanh product-thanh2">
+                                        <span class="position-relative z-2 fw-bold">còn 10/15 suất</span>
+                                        <div class="product-thanh-con"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="product-relate-item">
+                        <div class="row align-items-center d-flex">
+                            <div class="col-md-4 align-items-center d-flex">
+                                <img class="w-100 product-relate-item-img" src="images/spdetail1.jfif" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <p class="product-name2 fw-bold">Điện thoại Samsung Galaxy A05 6GB/128GB</p>
+                                <p class="product-price">
+                                    <span class="product-price-sale2">14.000.000 đ</span>
+                                    <br>
+                                    <span class="product-price-original-p">
+                                        <span class="product-price-original2">20.000.000 đ</span>
+                                        <span class="ms-3 product-price-percentage">-30%</span>
+                                    </span>
+                                </p>
+                                <div class="d-flex align-items-center product-thanh-container">
+                                    <img class="product-lua" src="images/lua.svg" alt="">
+                                    <div class="product-thanh product-thanh2">
+                                        <span class="position-relative z-2 fw-bold">còn 10/15 suất</span>
+                                        <div class="product-thanh-con"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="product-relate-item">
+                        <div class="row align-items-center d-flex">
+                            <div class="col-md-4 align-items-center d-flex">
+                                <img class="w-100 product-relate-item-img" src="images/spdetail1.jfif" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <p class="product-name2 fw-bold">Điện thoại Samsung Galaxy A05 6GB/128GB</p>
+                                <p class="product-price">
+                                    <span class="product-price-sale2">14.000.000 đ</span>
+                                    <br>
+                                    <span class="product-price-original-p">
+                                        <span class="product-price-original2">20.000.000 đ</span>
+                                        <span class="ms-3 product-price-percentage">-30%</span>
+                                    </span>
+                                </p>
+                                <div class="d-flex align-items-center product-thanh-container">
+                                    <img class="product-lua" src="images/lua.svg" alt="">
+                                    <div class="product-thanh product-thanh2">
+                                        <span class="position-relative z-2 fw-bold">còn 10/15 suất</span>
+                                        <div class="product-thanh-con"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="home-test">
+        <div class="container">
+            <div class="home-test-res">
+                <div class="text-center d-flex flex-column align-items-center">
+                    <div class="home-testkt">
+                        Kiểm Tra <span>Mã Dự Thưởng</span> tháng 11
+                    </div>
+
+                    <div class="home-testch">
+                        Cơ Hội Trúng Quà Từ <span><span class="text-white home-testchV">V</span>TRUE</span>
+                    </div>
+
+                    <div class="vang-border">
+
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center mt-md-5 mt-3">
+                    <div class="home-test-form d-flex justify-content-between align-items-center">
+                        <div class="text-uppercase fw-bold home-test-text">
+                            Tra <span style="color: rgba(246, 39, 23, 1);">Mã Dự Thưởng</span> của bạn tại đây
+                        </div>
+
+                        <div class="home-test-form-input">
+                            <input type="text" placeholder="Số điện thoại">
+                        </div>
+
+                        <div class="home-test-form-btn">
+                            <button>Tra cứu ngay</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center mt-md-5 mt-3">
+                    <div class="home-test-result">
+                        <div class="row">
+                            <div class="col-md-6 d-flex justify-content-center">
+                                <div class="w-75">
+                                    <p class="text-uppercase fw-bold" style="color: rgba(246, 39, 23, 1);">thông tin của
+                                        bạn</p>
+                                    <input class="border-0 px-3 py-2 w-100 rounded-2" type="text" value="0987 654 321"
+                                        name="" id="">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                                <div class="w-75">
+                                    <p class="text-uppercase fw-bold">mã dự thưởng bạn đang có</p>
+                                    <div class="home-test-result-code">
+                                        <p class="mb-0">
+                                            23UYIIO8LOAIC999
+                                        </p>
+
+                                        <p class="mb-0">
+                                            23UYIIO8LOAIC999
+                                        </p>
+
+                                        <p class="mb-0">
+                                            23UYIIO8LOAIC999
+                                        </p>
+
+                                        <p class="mb-0">
+                                            23UYIIO8LOAIC999
+                                        </p>
+
+                                        <p class="mb-0">
+                                            23UYIIO8LOAIC999
+                                        </p>
+
+                                        <p class="mb-0">
+                                            23UYIIO8LOAIC999
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="test1 position-absolute" src="images/test1.svg" alt="">
+                <img class="test2 position-absolute" src="images/test2.svg" alt="">
+                <img class="test3 position-absolute" src="images/test3.svg" alt="">
+                <img class="test4 position-absolute" src="images/test4.svg" alt="">
+                <img class="test5 position-absolute" src="images/test5.svg" alt="">
+                <img class="test6 position-absolute" src="images/test6.svg" alt="">
+                <img class="test7 position-absolute" src="images/test7.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="mb-5">
+        <img class="w-100" src="images/loangngoan.svg" alt="">
+    </section>
+
+
+    <section class="thele-cuocthi position-relative">
+        <div class="thele-cuocthichia position-absolute z-1">
+            <img class="w-100" src="images/chia.svg" alt="">
+        </div>
+        <img class="position-absolute tronhome1" src="images/tronghome1.svg" alt="">
+        <img class="position-absolute tronhome2" src="images/tronhome2.svg" alt="">
+        <div class="container position-relative z-3">
+            <div class="row">
+                <div class="col-md-3 px-0">
+                    <div class="mb-4">
+                        <h2 class="text-uppercase fw-bold">thể lệ <span style="color: rgba(246, 39, 23, 1);">cuộc
+                                thi</span>
+                            <br> & <span style="color:rgba(255, 202, 0, 1)">quay thưởng</span>
+                        </h2>
+                        <div class="quay_border">
+
+                        </div>
+                    </div>
+                    <div class="nav nav-tabs mb-3 d-flex flex-column tab-thele border-0" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">Thể lệ cuộc thi <img src="images/denright.svg" alt=""></button>
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Thể lệ quay
+                            thưởng <img src="images/denright.svg" alt=""></button>
+                    </div>
+                </div>
+
+                <div class="col-md-9 px-0">
+                    <div class="tab-content tab-thele-noidung  border-0 bg-light" id="nav-tabContent">
+                        <div class="tab-pane fade active show" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <div style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
+                                <strong>1. Đối tượng tham gia:</strong>
+                                <p>Mọi khách hàng trên toàn quốc mua sản phẩm có dán tem chống giả VTrue và tiến hành
+                                    xác thực tem.</p>
+                            </div>
+
+                            <div class="py-4" style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
+                                <strong>2. Thời gian diễn ra:</strong>
+                                <ul class="mb-0 pb-0">
+                                    <li>Chương trình bắt đầu từ ngày 01/11/2024 và kết thúc vào ngày 30/04/2025.</li>
+                                    <li class="mb-0">Quay thưởng sẽ diễn ra vào 20h00 thứ Năm đầu tiên của mỗi tháng
+                                        trong suốt thời gian
+                                        chương trình.</li>
+                                </ul>
+                            </div>
+
+                            <div class="py-4" style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
+                                <strong>3. Cách thức tham gia:</strong>
+                                <ul class="mb-0 pb-0">
+                                    <li>Khách hàng sau khi mua sản phẩm có dán tem chống giả VTrue, tiến hành xác thực
+                                        bằng cách quét mã
+                                        QR hoặc gửi tin nhắn theo hướng dẫn trên tem.</li>
+                                    <li>Mỗi mã tem xác thực thành công sẽ tự động được ghi nhận là một mã dự thưởng
+                                        trong hệ thống.</li>
+                                    <li>Khách hàng có thể xác thực nhiều lần với các sản phẩm khác nhau để tăng cơ hội
+                                        trúng thưởng.</li>
+                                </ul>
+                            </div>
+
+                            <div class="pt-3 pb-2" style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
+                                <strong>4. Cơ cấu giải thưởng:</strong>
+                                <ul class="mb-0 pb-0">
+                                    <li>Giải nhất: 1 giải trị giá 50.000.000 đ</li>
+                                    <li>Giải nhì: 1 giải trị giá 20.000.000 đ</li>
+                                    <li>Giải ba: 1 giải trị giá 10.000.000 đ</li>
+                                    <li>Giải khuyến khích: 10 giải trị giá 1.000.000 đ mỗi giải</li>
+                                    <li>Giải đặc biệt: 1 giải trị giá 10.000.000 đ cho khách hàng có nhiều mã dự thưởng
+                                        nhất trong suốt
+                                        chương trình</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile">
+                            <div style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
+                                <strong>1. Đối tượng tham gia:</strong>
+                                <p>Mọi khách hàng trên toàn quốc mua sản phẩm có dán tem chống giả VTrue và tiến hành
+                                    xác thực tem.</p>
+                            </div>
+
+                            <div class="py-4" style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
+                                <strong>2. Thời gian diễn ra:</strong>
+                                <ul class="mb-0 pb-0">
+                                    <li>Chương trình bắt đầu từ ngày 01/11/2024 và kết thúc vào ngày 30/04/2025.</li>
+                                    <li class="mb-0">Quay thưởng sẽ diễn ra vào 20h00 thứ Năm đầu tiên của mỗi tháng
+                                        trong suốt thời gian
+                                        chương trình.</li>
+                                </ul>
+                            </div>
+
+                            <div class="py-4" style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
+                                <strong>3. Cách thức tham gia:</strong>
+                                <ul class="mb-0 pb-0">
+                                    <li>Khách hàng sau khi mua sản phẩm có dán tem chống giả VTrue, tiến hành xác thực
+                                        bằng cách quét mã
+                                        QR hoặc gửi tin nhắn theo hướng dẫn trên tem.</li>
+                                    <li>Mỗi mã tem xác thực thành công sẽ tự động được ghi nhận là một mã dự thưởng
+                                        trong hệ thống.</li>
+                                    <li>Khách hàng có thể xác thực nhiều lần với các sản phẩm khác nhau để tăng cơ hội
+                                        trúng thưởng.</li>
+                                </ul>
+                            </div>
+
+                            <div class="pt-3 pb-2" style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
+                                <strong>4. Cơ cấu giải thưởng:</strong>
+                                <ul class="mb-0 pb-0">
+                                    <li>Giải nhất: 1 giải trị giá 50.000.000 đ</li>
+                                    <li>Giải nhì: 1 giải trị giá 20.000.000 đ</li>
+                                    <li>Giải ba: 1 giải trị giá 10.000.000 đ</li>
+                                    <li>Giải khuyến khích: 10 giải trị giá 1.000.000 đ mỗi giải</li>
+                                    <li>Giải đặc biệt: 1 giải trị giá 10.000.000 đ cho khách hàng có nhiều mã dự thưởng
+                                        nhất trong suốt
+                                        chương trình</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="py-md-5 py-3">
+        <div class="d-flex flex-column align-items-center pb-4">
+            <h2 class="fw-bold">ĐIỂM TIN THỜI GIAN THỰC</h2>
+            <div class="border-tintuc-title">
+
+            </div>
+        </div>
+        <div class="container-fluid padding-side d-flex align-items-center flex-column" data-aos="fade-up">
+            <div lass="list-blog mt-3">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <a href="">
+                                    <img class="w-100" src="images/blog1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="blog-content">
+                                <p class="blog-date"><span>10/10/2024</span> - <span>14:36</span></p>
+                                <a href="">
+                                    <p class="blog-name fw-bold">Thủ tướng đề nghị Hàn Quốc cấp khoản vay ưu đãi để xây
+                                        đường sắt, thủ
+                                        tướng đề nghị Hàn Quốc cấp khoản vay ưu cao tốc</p>
+                                </a>
+                                <a href="">
+                                    <p class="blog-description">
+                                        Bên cạnh đề xuất mở cửa thị trường cho hàng hóa Việt Nam, Thủ tướng đề nghị ,
+                                        Bên cạnh đề xuất mở
+                                        cửa thị trường cho hàng hóa Việt Nam, Thủ tướng đề nghị...
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img class="w-100" src="images/blog2.png" alt="">
+                            </div>
+                            <div class="blog-content">
+                                <p class="blog-date"><span>10/10/2024</span> - <span>14:36</span></p>
+                                <p class="blog-name fw-bold">Thủ tướng đề nghị Hàn Quốc cấp khoản vay ưu đãi để xây
+                                    đường sắt, cao tốc
+                                </p>
+                                <p class="blog-description">
+                                    Bên cạnh đề xuất mở cửa thị trường cho hàng hóa Việt Nam, Thủ tướng đề nghị...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img class="w-100" src="images/blog3.png" alt="">
+                            </div>
+                            <div class="blog-content">
+                                <p class="blog-date"><span>10/10/2024</span> - <span>14:36</span></p>
+                                <p class="blog-name fw-bold">Thủ tướng đề nghị Hàn Quốc cấp khoản vay ưu đãi để xây
+                                    đường sắt, cao tốc
+                                </p>
+                                <p class="blog-description">
+                                    Bên cạnh đề xuất mở cửa thị trường cho hàng hóa Việt Nam, Thủ tướng đề nghị...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img class="w-100" src="images/blog4.png" alt="">
+                            </div>
+                            <div class="blog-content">
+                                <p class="blog-date"><span>10/10/2024</span> - <span>14:36</span></p>
+                                <p class="blog-name fw-bold">Thủ tướng đề nghị Hàn Quốc cấp khoản vay ưu đãi để xây
+                                    đường sắt, cao tốc
+                                </p>
+                                <p class="blog-description">
+                                    Bên cạnh đề xuất mở cửa thị trường cho hàng hóa Việt Nam, Thủ tướng đề nghị...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
 
