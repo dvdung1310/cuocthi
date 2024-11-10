@@ -628,8 +628,8 @@ a.nav-link:hover {
 
 @media (max-width: 999px) {
   a.nav-link {
-    font-size: 30px;
-    padding: 15px 0 15px 0 !important;
+    font-size: 20px;
+    padding: 10px 0 10px 0 !important;
   }
 }
 

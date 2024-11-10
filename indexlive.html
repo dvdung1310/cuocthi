@@ -21,6 +21,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+      <!-- slick -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- end slick -->
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
@@ -172,97 +178,142 @@
     </div>
 
     <header id="header">
-        <div class="header-logo-list">
-            <div class="container d-flex w-100 justify-content-between">
-                <div class="text-center footer-logo-items">
-                    <img class="footer-logo1" src="images/index/c0f12ca57b4b441b72a46b6e273584dc.jfif" alt="">
-                </div>
-                <div class="text-center footer-logo-items">
-                    <img class="footer-logo2" src="images/index/haiquan.jfif" alt="">
-                </div>
-                <div class="text-center footer-logo-items">
-                    <img class="footer-logo3" src="images/index/dms.png" alt="">
-                </div>
-                <div class="text-center footer-logo-items">
-                    <img class="footer-logo4" src="images/index/do.jfif" alt="">
-                </div>
-                <div class="text-center footer-logo-items">
-                    <img class="footer-logo5" src="images/index/vnet.png" alt="">
-                </div>
-                <div class="text-center footer-logo-items">
-                    <img class="footer-logo6" src="images/index/vtrue.png" alt="">
-                </div>
-            </div>
+      <div class="header-logo-list">
+        <div class="container d-flex w-100 justify-content-between multiple-items">
+          <div class="text-center footer-logo-items">
+            <a href="">
+              <img class="footer-logo1" src="images/index/c0f12ca57b4b441b72a46b6e273584dc.jfif" alt="">
+            </a>
+          </div>
+          <div class="text-center footer-logo-items">
+            <a href="">
+              <img class="footer-logo2" src="images/index/haiquan.jfif" alt="">
+            </a>
+          </div>
+          <div class="text-center footer-logo-items">
+            <a href="">
+              <img class="footer-logo3" src="images/index/dms.png" alt="">
+            </a>
+          </div>
+          <div class="text-center footer-logo-items">
+           <a href="">
+            <img class="footer-logo4" src="images/index/do.jfif" alt="">
+           </a>
+          </div>
+          <div class="text-center footer-logo-items">
+            <a href="">
+              <img class="footer-logo5" src="images/index/vnet.png" alt="">
+            </a>
+          </div>
+          <div class="text-center footer-logo-items">
+            <a href="">
+              <img class="footer-logo6" src="images/index/vtrue.png" alt="">
+            </a>
+          </div>
         </div>
-        <nav class="header-top bg-secondary">
-            <div class="">
-                <div class="d-md-flex flex-wrap justify-content-around align-items-center">
-                    <div class="text-center top-bar-left">
-                        <a class="text-center" href="">
-                            <p class="mb-1 header-top-border-ct">Cuộc thi</p>
-                            <p class="mb-0 text-size">Chống hàng giả và lừa đảo trực tuyến</p>
-                        </a>
-                    </div>
-                    <div class="text-center top-bar-right">
-                        <a class="text-center" href="">
-                            <p class="mb-1 header-top-border-ctt">Chương trình trao thưởng</p>
-                            <p class="mb-0 text-size">Cào tem chống giả - nhận ngay may mắn</p>
-                        </a>
-
-                    </div>
-                </div>
+      </div>
+      <script>
+        $('.multiple-items').slick({
+          dots: false,
+          infinite: true,
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          responsive: [{
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 6,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 2,
+              }
+            }
+          ]
+        });
+      </script>
+      <nav class="header-top bg-secondary">
+        <div class="">
+          <div class="d-md-flex flex-wrap justify-content-around align-items-center">
+            <div class="text-center top-bar-left">
+              <a class="text-center" href="">
+                <p class="mb-1 header-top-border-ct">Cuộc thi</p>
+                <p class="mb-0 text-size">Chống hàng giả và lừa đảo trực tuyến</p>
+              </a>
             </div>
-        </nav>
-        <nav id="primary-header" class="navbar navbar-expand-lg py-2">
-            <div class="container-fluid padding-side">
-                <div class="d-flex justify-content-between align-items-center w-100 ">
-                    <button class="navbar-toggler border-0 d-flex d-lg-none order-3 p-2 shadow-none" type="button"
-                        data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar"
-                        aria-expanded="false">
-                        <svg class="navbar-icon" width="60" height="60">
-                            <use xlink:href="#navbar-icon"></use>
-                        </svg>
-                    </button>
-                    <div class="header-bottom offcanvas offcanvas-end " id="bdNavbar"
-                        aria-labelledby="bdNavbarOffcanvasLabel">
-                        <div class="offcanvas-header px-4 pb-0">
-                            <button type="button" class="btn-close btn-close-black mt-2" data-bs-dismiss="offcanvas"
-                                aria-label="Close" data-bs-target="#bdNavbar"></button>
-                        </div>
-                        <div class="offcanvas-body align-items-center ">
-                            <ul class="navbar-nav mb-2 mb-lg-0">
-                                <li class="nav-item px-3">
-                                    <a class="nav-link active p-0" aria-current="page" href="index.html">Trang chủ</a>
-                                </li>
-                                <li class="nav-item px-3">
-                                    <a class="nav-link p-0" href="about.html">Giới thiệu</a>
-                                </li>
-                                <li class="nav-item px-3">
-                                    <a class="nav-link p-0" href="list-product.html">Sản phẩm khuyến mãi</a>
-                                </li>
-                                <li class="nav-item px-3">
-                                    <a class="nav-link p-0" href="blog.html">Điểm tin</a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="search d-none">
-                        <div class="position-relative">
-                            <div class="d-flex">
-                                <div class="me-3 position-relative">
-                                    <img src="images/index/shopping-cart.png" alt="">
-                                    <div class="cart-number">
-                                        2
-                                    </div>
-                                </div>
-                                <span>Giỏ hàng</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="text-center top-bar-right">
+              <a class="text-center" href="">
+                <p class="mb-1 header-top-border-ctt">Chương trình trao thưởng</p>
+                <p class="mb-0 text-size">Cào tem chống giả - nhận ngay may mắn</p>
+              </a>
+  
             </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
+      <nav id="primary-header" class="navbar navbar-expand-lg py-md-2 py-0">
+        <div class="container-fluid padding-side">
+          <div class="d-flex justify-content-between align-items-center w-100 ">
+            <button class="navbar-toggler border-0 d-flex d-lg-none order-3 p-md-2 p-0 shadow-none" type="button"
+              data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false">
+              <svg class="navbar-icon" width="40" height="40">
+                <use xlink:href="#navbar-icon"></use>
+              </svg>
+            </button>
+            <div class="header-bottom offcanvas offcanvas-end " id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
+              <div class="offcanvas-header px-4 pb-0">
+                <button type="button" class="btn-close btn-close-black mt-2" data-bs-dismiss="offcanvas"
+                  aria-label="Close" data-bs-target="#bdNavbar"></button>
+              </div>
+              <div class="offcanvas-body align-items-center ">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item px-3">
+                    <a class="nav-link active p-0" aria-current="page" href="index.html">Trang chủ</a>
+                  </li>
+                  <li class="nav-item px-3">
+                    <a class="nav-link p-0" href="about.html">Giới thiệu</a>
+                  </li>
+  
+                  <li class="nav-item px-3">
+                    <a class="nav-link p-0" href="blog.html">Điểm tin</a>
+                  </li>
+  
+                  <li class="nav-item px-3">
+                    <a class="nav-link p-0" href="contact.html">Liên hệ</a>
+                  </li>
+  
+                </ul>
+              </div>
+            </div>
+            <div class="search  d-none">
+              <div class="position-relative">
+                <div class="d-flex">
+                  <div class="me-3 position-relative">
+                    <img src="images/index/shopping-cart.png" alt="">
+                    <div class="cart-number">
+                      2
+                    </div>
+                  </div>
+                  <span>Giỏ hàng</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <section class="">
@@ -308,7 +359,7 @@
     </section>
 
     <section class="container">
-        <div class="row d-flex justify-content-center mt-5">
+        <div class="row d-flex justify-content-center mt-md-5 mt-2">
             <div class="col-md-4 d-flex justify-content-center">
               <div class="thamgiacuocthi d-flex align-items-center  w-100">
                 <div class="me-3">
@@ -327,7 +378,7 @@
     </section>
 
 
-    <section>
+    <section class="d-none">
         <div class="container">
             <div>
                 <h3 class="text-uppercase fw-bold pb-2 " 
@@ -427,222 +478,481 @@
 
     <section class="home-test">
         <div class="container">
-            <div class="home-test-res">
-                <div class="text-center d-flex flex-column align-items-center">
-                    <div class="home-testkt">
-                        Kiểm Tra <span>Mã Dự Thưởng</span> tháng 11
-                    </div>
-
-                    <div class="home-testch">
-                        Cơ Hội Trúng Quà Từ <span><span class="text-white home-testchV">V</span>TRUE</span>
-                    </div>
-
-                    <div class="vang-border">
-
-                    </div>
-                </div>
-
-                <div class="d-flex justify-content-center mt-md-5 mt-3">
-                    <div class="home-test-form d-flex justify-content-between align-items-center">
-                        <div class="text-uppercase fw-bold home-test-text">
-                            Tra <span style="color: rgba(246, 39, 23, 1);">Mã Dự Thưởng</span> của bạn tại đây
-                        </div>
-
-                        <div class="home-test-form-input">
-                            <input type="text" placeholder="Số điện thoại">
-                        </div>
-
-                        <div class="home-test-form-btn">
-                            <button>Tra cứu ngay</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="d-flex justify-content-center mt-md-5 mt-3">
-                    <div class="home-test-result">
-                        <div class="row">
-                            <div class="col-md-6 d-flex justify-content-center">
-                                <div class="w-75">
-                                    <p class="text-uppercase fw-bold" style="color: rgba(246, 39, 23, 1);">thông tin của
-                                        bạn</p>
-                                    <input class="border-0 px-3 py-2 w-100 rounded-2" type="text" value="0987 654 321"
-                                        name="" id="">
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 d-flex justify-content-center align-items-center">
-                                <div class="w-75">
-                                    <p class="text-uppercase fw-bold">mã dự thưởng bạn đang có</p>
-                                    <div class="home-test-result-code">
-                                        <p class="mb-0">
-                                            23UYIIO8LOAIC999
-                                        </p>
-
-                                        <p class="mb-0">
-                                            23UYIIO8LOAIC999
-                                        </p>
-
-                                        <p class="mb-0">
-                                            23UYIIO8LOAIC999
-                                        </p>
-
-                                        <p class="mb-0">
-                                            23UYIIO8LOAIC999
-                                        </p>
-
-                                        <p class="mb-0">
-                                            23UYIIO8LOAIC999
-                                        </p>
-
-                                        <p class="mb-0">
-                                            23UYIIO8LOAIC999
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <img class="test1 position-absolute" src="images/test1.svg" alt="">
-                <img class="test2 position-absolute" src="images/test2.svg" alt="">
-                <img class="test3 position-absolute" src="images/test3.svg" alt="">
-                <img class="test4 position-absolute" src="images/test4.svg" alt="">
-                <img class="test5 position-absolute" src="images/test5.svg" alt="">
-                <img class="test6 position-absolute" src="images/test6.svg" alt="">
-                <img class="test7 position-absolute" src="images/test7.svg" alt="">
+          <div class="home-test-res">
+            <div class="text-center d-flex flex-column align-items-center">
+              <div class="home-testkt">
+                Kiểm Tra <span>Mã Dự Thưởng</span> tháng 11
+              </div>
+    
+              <div class="home-testch">
+                Cơ Hội Trúng Quà Từ <span><span class="text-white home-testchV">V</span>TRUE</span>
+              </div>
+    
+              <div class="vang-border">
+    
+              </div>
             </div>
+    
+            <div class="d-flex justify-content-center mt-md-5 mt-3">
+              <div class="home-test-form d-md-flex justify-content-between align-items-center">
+                <div class="text-uppercase fw-bold home-test-text">
+                  Tra <span style="color: rgba(246, 39, 23, 1);">Mã Dự Thưởng</span> của bạn tại đây
+                </div>
+    
+                <div class="home-test-form-input">
+                  <input type="text" placeholder="Số điện thoại">
+                </div>
+    
+                <div class="home-test-form-btn">
+                  <button>Tra cứu ngay</button>
+                </div>
+              </div>
+            </div>
+    
+            <div class="d-flex justify-content-center mt-md-5 mt-3">
+              <div class="home-test-result">
+                <div class="row">
+                  <div class="col-md-6 d-flex justify-content-center">
+                    <div class="w-75">
+                      <p class="text-uppercase fw-bold text-md-start text-center" style="color: rgba(246, 39, 23, 1);">thông tin của bạn</p>
+                      <input class="border-0 px-3 py-2 mb-md-0 mb-3 w-100 rounded-2 text-md-start text-center" type="text" value="0987 654 321" name="" id="">
+                    </div>
+                  </div>
+    
+                  <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <div class="w-75">
+                      <p class="text-uppercase fw-bold text-md-start text-center">mã dự thưởng bạn đang có</p>
+                      <div class="home-test-result-code">
+                        <p class="mb-0">
+                          23UYIIO8LOAIC999
+                        </p>
+    
+                        <p class="mb-0">
+                          23UYIIO8LOAIC999
+                        </p>
+    
+                        <p class="mb-0">
+                          23UYIIO8LOAIC999
+                        </p>
+    
+                        <p class="mb-0">
+                          23UYIIO8LOAIC999
+                        </p>
+    
+                        <p class="mb-0">
+                          23UYIIO8LOAIC999
+                        </p>
+    
+                        <p class="mb-0">
+                          23UYIIO8LOAIC999
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img class="test1 position-absolute" src="images/test1.svg" alt="">
+            <img class="test2 position-absolute" src="images/test2.svg" alt="">
+            <img class="test3 position-absolute" src="images/test3.svg" alt="">
+            <img class="test4 position-absolute" src="images/test4.svg" alt="">
+            <img class="test5 position-absolute" src="images/test5.svg" alt="">
+            <img class="test6 position-absolute" src="images/test6.svg" alt="">
+            <img class="test7 position-absolute" src="images/test7.svg" alt="">
+          </div>
         </div>
-    </section>
+      </section>
 
 
     <section class="mb-5">
         <img class="w-100" src="images/loangngoan.svg" alt="">
     </section>
+    
+    
+    <section class="ranking-list mt-md-5">
+        <div class="container">
+          <div class="row">
+            <!-- bxh cuộc thi -->
+            <div class="col-md-6">
+              <div class="d-flex d-md-block justify-content-center">
+                <div class="ranking-item-title1">
+                  BẢNG XẾP HẠNG
+                </div>
+    
+                <div class="ranking-item-title2 mb-2 mb-md-4">
+                  CUỘC THI
+                </div>
+              </div>
+              <div class="ranking-item">
+                <div
+                  class="d-flex justify-content-center form-ranking">
+                  <p class="mb-0">Thời gian:</p>
+                  <select name id>
+                    <option value>Tuần</option>
+                    <option value>Tuần</option>
+                  </select>
+  
+                  <select name id>
+                    <option value>Tháng</option>
+                    <option value>Tháng</option>
+  
+                  </select>
+  
+                  <select name id>
+                    <option value>Năm</option>
+                    <option value>Năm</option>
+                  </select>
+                </div>
+  
+                <div class="table-custom-div-title">
+                  <div class="table-custom-div1">
+                    Xếp Hạng
+                  </div>
+  
+                  <div class="table-custom-div2">
+                    Họ Và Tên
+                  </div>
+  
+                  <div class="table-custom-div3">
+                    Số Điện Thoại
+                  </div>
+                </div>
+  
+                <div class="table-custom-div-item">
+                  <div class="table-custom-top">
+                    <div class="table-custom-top1 d-flex align-items-center fw-bold">
+                      <span class="me-2">1</span>
+                      <p class="mb-0">Giải Nhất</p>
+                    </div>
+                  </div>
+  
+                  <div class="table-custom-name text-capitalize">
+                    nguyễn danh kiên
+                  </div>
+  
+                  <div class="table-custom-phone">
+                    **** ** 9687
+                  </div>
+                </div>
+  
+                <div class="table-custom-div-item">
+                  <div class="table-custom-top">
+                    <div class="table-custom-top2 d-flex align-items-center fw-bold">
+                      <span class="me-2">2</span>
+                      <p class="mb-0">Giải Nhì</p>
+                    </div>
+                  </div>
+  
+                  <div class="table-custom-name text-capitalize">
+                    nguyễn danh kiên
+                  </div>
+  
+                  <div class="table-custom-phone">
+                    **** ** 9687
+                  </div>
+                </div>
+  
+                <div class="table-custom-div-item">
+                  <div class="table-custom-top">
+                    <div class="table-custom-top3 d-flex align-items-center fw-bold">
+                      <span class="me-2">3</span>
+                      <p class="mb-0">Giải Ba</p>
+                    </div>
+                  </div>
+  
+                  <div class="table-custom-name text-capitalize">
+                    nguyễn danh kiên
+                  </div>
+  
+                  <div class="table-custom-phone">
+                    **** ** 9687
+                  </div>
+                </div>
+  
+                <div class="table-custom-div-item">
+                  <div class="table-custom-top">
+                    <div class="table-custom-top-none d-flex align-items-center fw-bold">
+                      <span class="me-2"></span>
+                      <p class="mb-0">Khuyến Khích</p>
+                    </div>
+                  </div>
+  
+                  <div class="table-custom-name text-capitalize">
+                    nguyễn danh kiên
+                  </div>
+  
+                  <div class="table-custom-phone">
+                    **** ** 9687
+                  </div>
+                </div>
+  
+                <div class="table-custom-div-item">
+                  <div class="table-custom-top">
+                    <div class="table-custom-top-none d-flex align-items-center fw-bold">
+                      <span class="me-2"></span>
+                      <p class="mb-0">Giải Năm</p>
+                    </div>
+                  </div>
+  
+                  <div class="table-custom-name text-capitalize">
+                    nguyễn danh kiên
+                  </div>
+  
+                  <div class="table-custom-phone">
+                    **** ** 9687
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Danh sách trúng thưởng -->
+            <div class="col-md-6">
+              <div class="d-flex d-md-block justify-content-center mt-4 mt-md-0">
+                <div class="ranking-item-title1 text-end">
+                  BẢNG XẾP HẠNG
+                </div>
+    
+                <div class="mb-2 mb-md-4 d-flex justify-content-end">
+                  <div class="ranking-item-title2 text-white" style="background-color:rgba(255, 202, 0, 1)">
+                    TRÚNG THƯỞNG
+                  </div>
+                </div>
+              </div>
+              <div class="ranking-item">
+                <div
+                  class="d-flex justify-content-center form-ranking">
+                  <p class="mb-0">Thời gian:</p>
+                  <select name id>
+                    <option value>Tuần</option>
+                    <option value>Tuần</option>
+                  </select>
+  
+                  <select name id>
+                    <option value>Tháng</option>
+                    <option value>Tháng</option>
+  
+                  </select>
+  
+                  <select name id>
+                    <option value>Năm</option>
+                    <option value>Năm</option>
+                  </select>
+                </div>
+  
+                <div class="table-custom-div-title">
+                  <div class="table-custom-div1">
+                    Xếp Hạng
+                  </div>
+  
+                  <div class="table-custom-div2">
+                    Họ Và Tên
+                  </div>
+  
+                  <div class="table-custom-div3">
+                    Số Điện Thoại
+                  </div>
+                </div>
+  
+                <div class="table-custom-div-item">
+                  <div class="table-custom-top">
+                    <div class="table-custom-top1 d-flex align-items-center fw-bold">
+                      <span class="me-2">1</span>
+                      <p class="mb-0">Giải Nhất</p>
+                    </div>
+                  </div>
+  
+                  <div class="table-custom-name text-capitalize">
+                    nguyễn danh kiên
+                  </div>
+  
+                  <div class="table-custom-phone">
+                    **** ** 9687
+                  </div>
+                </div>
+  
+                <div class="table-custom-div-item">
+                  <div class="table-custom-top">
+                    <div class="table-custom-top2 d-flex align-items-center fw-bold">
+                      <span class="me-2">2</span>
+                      <p class="mb-0">Giải Nhì</p>
+                    </div>
+                  </div>
+  
+                  <div class="table-custom-name text-capitalize">
+                    nguyễn danh kiên
+                  </div>
+  
+                  <div class="table-custom-phone">
+                    **** ** 9687
+                  </div>
+                </div>
+  
+                <div class="table-custom-div-item">
+                  <div class="table-custom-top">
+                    <div class="table-custom-top3 d-flex align-items-center fw-bold">
+                      <span class="me-2">3</span>
+                      <p class="mb-0">Giải Ba</p>
+                    </div>
+                  </div>
+  
+                  <div class="table-custom-name text-capitalize">
+                    nguyễn danh kiên
+                  </div>
+  
+                  <div class="table-custom-phone">
+                    **** ** 9687
+                  </div>
+                </div>
+  
+                <div class="table-custom-div-item">
+                  <div class="table-custom-top">
+                    <div class="table-custom-top-none d-flex align-items-center fw-bold">
+                      <span class="me-2"></span>
+                      <p class="mb-0">Khuyến Khích</p>
+                    </div>
+                  </div>
+  
+                  <div class="table-custom-name text-capitalize">
+                    nguyễn danh kiên
+                  </div>
+  
+                  <div class="table-custom-phone">
+                    **** ** 9687
+                  </div>
+                </div>
+  
+                <div class="table-custom-div-item">
+                  <div class="table-custom-top">
+                    <div class="table-custom-top-none d-flex align-items-center fw-bold">
+                      <span class="me-2"></span>
+                      <p class="mb-0">Giải Năm</p>
+                    </div>
+                  </div>
+  
+                  <div class="table-custom-name text-capitalize">
+                    nguyễn danh kiên
+                  </div>
+  
+                  <div class="table-custom-phone">
+                    **** ** 9687
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
-    <section class="thele-cuocthi position-relative">
+      <section class="thele-cuocthi position-relative">
         <div class="thele-cuocthichia position-absolute z-1">
-            <img class="w-100" src="images/chia.svg" alt="">
+          <img class="w-100" src="images/chia.svg" alt="">
         </div>
         <img class="position-absolute tronhome1" src="images/tronghome1.svg" alt="">
         <img class="position-absolute tronhome2" src="images/tronhome2.svg" alt="">
         <div class="container position-relative z-3">
-            <div class="row">
-                <div class="col-md-3 px-0">
-                    <div class="mb-4">
-                        <h2 class="text-uppercase fw-bold">thể lệ <span style="color: rgba(246, 39, 23, 1);">cuộc
-                                thi</span>
-                            <br> & <span style="color:rgba(255, 202, 0, 1)">quay thưởng</span>
-                        </h2>
-                        <div class="quay_border">
-
-                        </div>
-                    </div>
-                    <div class="nav nav-tabs mb-3 d-flex flex-column tab-thele border-0" id="nav-tab" role="tablist">
-                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
-                            aria-selected="true">Thể lệ cuộc thi <img src="images/denright.svg" alt=""></button>
-                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
-                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Thể lệ quay
-                            thưởng <img src="images/denright.svg" alt=""></button>
-                    </div>
+          <div class="row tab-the-le-px">
+            <div class="col-md-3 px-0">
+              <div class="mb-4 d-md-block d-flex justify-content-center align-items-center flex-column">
+                <h2 class="text-uppercase fw-bold h2-the-le">thể lệ <span style="color: rgba(246, 39, 23, 1);">cuộc thi</span>
+                  <br> & <span style="color:rgba(255, 202, 0, 1)">quay thưởng</span>
+                </h2>
+                <div class="quay_border">
+    
                 </div>
-
-                <div class="col-md-9 px-0">
-                    <div class="tab-content tab-thele-noidung  border-0 bg-light" id="nav-tabContent">
-                        <div class="tab-pane fade active show" id="nav-home" role="tabpanel"
-                            aria-labelledby="nav-home-tab">
-                            <div style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
-                                <strong>1. Đối tượng tham gia:</strong>
-                                <p>Mọi khách hàng trên toàn quốc mua sản phẩm có dán tem chống giả VTrue và tiến hành
-                                    xác thực tem.</p>
-                            </div>
-
-                            <div class="py-4" style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
-                                <strong>2. Thời gian diễn ra:</strong>
-                                <ul class="mb-0 pb-0">
-                                    <li>Chương trình bắt đầu từ ngày 01/11/2024 và kết thúc vào ngày 30/04/2025.</li>
-                                    <li class="mb-0">Quay thưởng sẽ diễn ra vào 20h00 thứ Năm đầu tiên của mỗi tháng
-                                        trong suốt thời gian
-                                        chương trình.</li>
-                                </ul>
-                            </div>
-
-                            <div class="py-4" style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
-                                <strong>3. Cách thức tham gia:</strong>
-                                <ul class="mb-0 pb-0">
-                                    <li>Khách hàng sau khi mua sản phẩm có dán tem chống giả VTrue, tiến hành xác thực
-                                        bằng cách quét mã
-                                        QR hoặc gửi tin nhắn theo hướng dẫn trên tem.</li>
-                                    <li>Mỗi mã tem xác thực thành công sẽ tự động được ghi nhận là một mã dự thưởng
-                                        trong hệ thống.</li>
-                                    <li>Khách hàng có thể xác thực nhiều lần với các sản phẩm khác nhau để tăng cơ hội
-                                        trúng thưởng.</li>
-                                </ul>
-                            </div>
-
-                            <div class="pt-3 pb-2" style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
-                                <strong>4. Cơ cấu giải thưởng:</strong>
-                                <ul class="mb-0 pb-0">
-                                    <li>Giải nhất: 1 giải trị giá 50.000.000 đ</li>
-                                    <li>Giải nhì: 1 giải trị giá 20.000.000 đ</li>
-                                    <li>Giải ba: 1 giải trị giá 10.000.000 đ</li>
-                                    <li>Giải khuyến khích: 10 giải trị giá 1.000.000 đ mỗi giải</li>
-                                    <li>Giải đặc biệt: 1 giải trị giá 10.000.000 đ cho khách hàng có nhiều mã dự thưởng
-                                        nhất trong suốt
-                                        chương trình</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile">
-                            <div style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
-                                <strong>1. Đối tượng tham gia:</strong>
-                                <p>Mọi khách hàng trên toàn quốc mua sản phẩm có dán tem chống giả VTrue và tiến hành
-                                    xác thực tem.</p>
-                            </div>
-
-                            <div class="py-4" style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
-                                <strong>2. Thời gian diễn ra:</strong>
-                                <ul class="mb-0 pb-0">
-                                    <li>Chương trình bắt đầu từ ngày 01/11/2024 và kết thúc vào ngày 30/04/2025.</li>
-                                    <li class="mb-0">Quay thưởng sẽ diễn ra vào 20h00 thứ Năm đầu tiên của mỗi tháng
-                                        trong suốt thời gian
-                                        chương trình.</li>
-                                </ul>
-                            </div>
-
-                            <div class="py-4" style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
-                                <strong>3. Cách thức tham gia:</strong>
-                                <ul class="mb-0 pb-0">
-                                    <li>Khách hàng sau khi mua sản phẩm có dán tem chống giả VTrue, tiến hành xác thực
-                                        bằng cách quét mã
-                                        QR hoặc gửi tin nhắn theo hướng dẫn trên tem.</li>
-                                    <li>Mỗi mã tem xác thực thành công sẽ tự động được ghi nhận là một mã dự thưởng
-                                        trong hệ thống.</li>
-                                    <li>Khách hàng có thể xác thực nhiều lần với các sản phẩm khác nhau để tăng cơ hội
-                                        trúng thưởng.</li>
-                                </ul>
-                            </div>
-
-                            <div class="pt-3 pb-2" style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
-                                <strong>4. Cơ cấu giải thưởng:</strong>
-                                <ul class="mb-0 pb-0">
-                                    <li>Giải nhất: 1 giải trị giá 50.000.000 đ</li>
-                                    <li>Giải nhì: 1 giải trị giá 20.000.000 đ</li>
-                                    <li>Giải ba: 1 giải trị giá 10.000.000 đ</li>
-                                    <li>Giải khuyến khích: 10 giải trị giá 1.000.000 đ mỗi giải</li>
-                                    <li>Giải đặc biệt: 1 giải trị giá 10.000.000 đ cho khách hàng có nhiều mã dự thưởng
-                                        nhất trong suốt
-                                        chương trình</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
+              <div class="nav nav-tabs mb-3 d-flex flex-column tab-thele border-0" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                  type="button" role="tab" aria-controls="nav-home" aria-selected="true">Thể lệ cuộc thi <img
+                    src="images/denright.svg" alt=""></button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                  type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Thể lệ quay thưởng <img
+                    src="images/denright.svg" alt=""></button>
+              </div>
             </div>
-
+    
+            <div class="col-md-9 px-0">
+              <div class="tab-content tab-thele-noidung  border-0 bg-light" id="nav-tabContent">
+                <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <div style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
+                    <strong>1. Đối tượng tham gia:</strong>
+                    <p>Mọi khách hàng trên toàn quốc mua sản phẩm có dán tem chống giả VTrue và tiến hành xác thực tem.</p>
+                  </div>
+    
+                  <div class="py-4" style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
+                    <strong>2. Thời gian diễn ra:</strong>
+                    <ul class="mb-0 pb-0">
+                      <li>Chương trình bắt đầu từ ngày 01/11/2024 và kết thúc vào ngày 30/04/2025.</li>
+                      <li class="mb-0">Quay thưởng sẽ diễn ra vào 20h00 thứ Năm đầu tiên của mỗi tháng trong suốt thời gian
+                        chương trình.</li>
+                    </ul>
+                  </div>
+    
+                  <div class="py-4" style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
+                    <strong>3. Cách thức tham gia:</strong>
+                    <ul class="mb-0 pb-0">
+                      <li>Khách hàng sau khi mua sản phẩm có dán tem chống giả VTrue, tiến hành xác thực bằng cách quét mã
+                        QR hoặc gửi tin nhắn theo hướng dẫn trên tem.</li>
+                      <li>Mỗi mã tem xác thực thành công sẽ tự động được ghi nhận là một mã dự thưởng trong hệ thống.</li>
+                      <li>Khách hàng có thể xác thực nhiều lần với các sản phẩm khác nhau để tăng cơ hội trúng thưởng.</li>
+                    </ul>
+                  </div>
+    
+                  <div class="pt-3 pb-2" style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
+                    <strong>4. Cơ cấu giải thưởng:</strong>
+                    <ul class="mb-0 pb-0">
+                      <li>Giải nhất: 1 giải trị giá 50.000.000 đ</li>
+                      <li>Giải nhì: 1 giải trị giá 20.000.000 đ</li>
+                      <li>Giải ba: 1 giải trị giá 10.000.000 đ</li>
+                      <li>Giải khuyến khích: 10 giải trị giá 1.000.000 đ mỗi giải</li>
+                      <li>Giải đặc biệt: 1 giải trị giá 10.000.000 đ cho khách hàng có nhiều mã dự thưởng nhất trong suốt
+                        chương trình</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile">
+                  <div style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
+                    <strong>1. Đối tượng tham gia:</strong>
+                    <p>Mọi khách hàng trên toàn quốc mua sản phẩm có dán tem chống giả VTrue và tiến hành xác thực tem.</p>
+                  </div>
+    
+                  <div class="py-4" style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
+                    <strong>2. Thời gian diễn ra:</strong>
+                    <ul class="mb-0 pb-0">
+                      <li>Chương trình bắt đầu từ ngày 01/11/2024 và kết thúc vào ngày 30/04/2025.</li>
+                      <li class="mb-0">Quay thưởng sẽ diễn ra vào 20h00 thứ Năm đầu tiên của mỗi tháng trong suốt thời gian
+                        chương trình.</li>
+                    </ul>
+                  </div>
+    
+                  <div class="py-4" style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
+                    <strong>3. Cách thức tham gia:</strong>
+                    <ul class="mb-0 pb-0">
+                      <li>Khách hàng sau khi mua sản phẩm có dán tem chống giả VTrue, tiến hành xác thực bằng cách quét mã
+                        QR hoặc gửi tin nhắn theo hướng dẫn trên tem.</li>
+                      <li>Mỗi mã tem xác thực thành công sẽ tự động được ghi nhận là một mã dự thưởng trong hệ thống.</li>
+                      <li>Khách hàng có thể xác thực nhiều lần với các sản phẩm khác nhau để tăng cơ hội trúng thưởng.</li>
+                    </ul>
+                  </div>
+    
+                  <div class="pt-3 pb-2" style="border-bottom: 2px dashed  rgba(255, 202, 0, 1)">
+                    <strong>4. Cơ cấu giải thưởng:</strong>
+                    <ul class="mb-0 pb-0">
+                      <li>Giải nhất: 1 giải trị giá 50.000.000 đ</li>
+                      <li>Giải nhì: 1 giải trị giá 20.000.000 đ</li>
+                      <li>Giải ba: 1 giải trị giá 10.000.000 đ</li>
+                      <li>Giải khuyến khích: 10 giải trị giá 1.000.000 đ mỗi giải</li>
+                      <li>Giải đặc biệt: 1 giải trị giá 10.000.000 đ cho khách hàng có nhiều mã dự thưởng nhất trong suốt
+                        chương trình</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
         </div>
-    </section>
+      </section>
 
 
     <section class="py-md-5 py-3">
@@ -744,56 +1054,61 @@
 
     <section id="footer">
         <div class="container-fluid padding-side footer-main d-flex flex-column align-items-center" data-aos="fade-up">
-            <h4 class="text-center fw-bold text-white mb-5">BAN TỔ CHỨC</h4>
-            <div class="footer-logo d-flex w-100 justify-content-between">
-                <div class="text-center footer-logo-items">
-                    <div class="footer-logo-items-img">
-                        <img class="footer-logo1" src="images/index/c0f12ca57b4b441b72a46b6e273584dc.jfif" alt="">
-                    </div>
-                    <p class="mb-0">Báo điện tử - Đảng Cộng sản Việt Nam</p>
-                </div>
-
-
-                <div class="text-center footer-logo-items">
-                    <div class="footer-logo-items-img">
-                        <img class="footer-logo2" src="images/index/haiquan.jfif" alt="">
-                    </div>
-                    <p class="mb-0">Tổng cục Hải quan</p>
-                </div>
-
-                <div class="text-center footer-logo-items">
-                    <div class="footer-logo-items-img">
-                        <img class="footer-logo3" src="images/index/dms.png" alt="">
-                    </div>
-                    <p class="mb-0">Tổng cục Quản lý thị trường</p>
-                </div>
-
-                <div class="text-center footer-logo-items">
-                    <div class="footer-logo-items-img">
-                        <img class="footer-logo4" src="images/index/do.jfif" alt="">
-                    </div>
-                    <p class="mb-0">Hiệp hội Chống hàng giả <br> và Bảo vệ người tiêu dùng</p>
-                </div>
-                <div class="text-center footer-logo-items">
-                    <div class="footer-logo-items-img">
-                        <img class="footer-logo5" src="images/index/vnet.png" alt="">
-                    </div>
-                    <p class="mb-0">Công ty Cổ phần VNet</p>
-                </div>
-
-                <div class="text-center footer-logo-items">
-                    <div class="footer-logo-items-img">
-                        <img class="footer-logo6" src="images/index/vtrue.png" alt="">
-                    </div>
-                    <p class="mb-0">Dịch vụ xác thực điện tử VTrue</p>
-                </div>
+          <div class="d-flex flex-column justify-content-center align-items-center mb-md-5 mb-4">
+            <h4 class="text-center fw-bold text-white">BAN TỔ CHỨC</h4>
+          <div class="border-footer">
+            
+          </div>
+          </div>
+          <div class="footer-logo d-flex w-100 justify-content-between">
+            <div class="text-center footer-logo-items">
+              <div class="footer-logo-items-img">
+                <img class="footer-logo1" src="images/index/c0f12ca57b4b441b72a46b6e273584dc.jfif" alt="">
+              </div>
+              <p class="mb-0">Báo điện tử - Đảng Cộng sản Việt Nam</p>
             </div>
+    
+    
+            <div class="text-center footer-logo-items">
+              <div class="footer-logo-items-img">
+                <img class="footer-logo2" src="images/index/haiquan.jfif" alt="">
+              </div>
+              <p class="mb-0">Tổng cục Hải quan</p>
+            </div>
+    
+            <div class="text-center footer-logo-items">
+              <div class="footer-logo-items-img">
+                <img class="footer-logo3" src="images/index/dms.png" alt="">
+              </div>
+              <p class="mb-0">Tổng cục Quản lý thị trường</p>
+            </div>
+    
+            <div class="text-center footer-logo-items">
+              <div class="footer-logo-items-img">
+                <img class="footer-logo4" src="images/index/do.jfif" alt="">
+              </div>
+              <p class="mb-0 footer-hh">Hiệp hội Chống hàng giả <br> và Bảo vệ người tiêu dùng</p>
+            </div>
+            <div class="text-center footer-logo-items">
+              <div class="footer-logo-items-img">
+                <img class="footer-logo5" src="images/index/vnet.png" alt="">
+              </div>
+              <p class="mb-0">Công ty Cổ phần VNet</p>
+            </div>
+    
+            <div class="text-center footer-logo-items">
+              <div class="footer-logo-items-img">
+                <img class="footer-logo6" src="images/index/vtrue.png" alt="">
+              </div>
+              <p class="mb-0">Dịch vụ xác thực điện tử VTrue</p>
+            </div>
+          </div>
         </div>
-
+    
         <div class="container-fluid padding-side footer-end" data-aos="fade-up">
-            © 2024 Vtrue. Designed by TreVN
+          © 2024 Vtrue. Designed by TreVN
         </div>
-    </section>
+      </section>
 
     <script src="js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>

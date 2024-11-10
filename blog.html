@@ -21,6 +21,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <!-- slick -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- end slick -->
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
@@ -173,97 +179,142 @@
 
     <header id="header">
         <div class="header-logo-list">
-            <div class="container d-flex w-100 justify-content-between">
-                <div class="text-center footer-logo-items">
-                    <img class="footer-logo1" src="images/index/c0f12ca57b4b441b72a46b6e273584dc.jfif" alt="">
-                </div>
-                <div class="text-center footer-logo-items">
-                    <img class="footer-logo2" src="images/index/haiquan.jfif" alt="">
-                </div>
-                <div class="text-center footer-logo-items">
-                    <img class="footer-logo3" src="images/index/dms.png" alt="">
-                </div>
-                <div class="text-center footer-logo-items">
-                    <img class="footer-logo4" src="images/index/do.jfif" alt="">
-                </div>
-                <div class="text-center footer-logo-items">
-                    <img class="footer-logo5" src="images/index/vnet.png" alt="">
-                </div>
-                <div class="text-center footer-logo-items">
-                    <img class="footer-logo6" src="images/index/vtrue.png" alt="">
-                </div>
+          <div class="container d-flex w-100 justify-content-between multiple-items">
+            <div class="text-center footer-logo-items">
+              <a href="">
+                <img class="footer-logo1" src="images/index/c0f12ca57b4b441b72a46b6e273584dc.jfif" alt="">
+              </a>
             </div>
+            <div class="text-center footer-logo-items">
+              <a href="">
+                <img class="footer-logo2" src="images/index/haiquan.jfif" alt="">
+              </a>
+            </div>
+            <div class="text-center footer-logo-items">
+              <a href="">
+                <img class="footer-logo3" src="images/index/dms.png" alt="">
+              </a>
+            </div>
+            <div class="text-center footer-logo-items">
+             <a href="">
+              <img class="footer-logo4" src="images/index/do.jfif" alt="">
+             </a>
+            </div>
+            <div class="text-center footer-logo-items">
+              <a href="">
+                <img class="footer-logo5" src="images/index/vnet.png" alt="">
+              </a>
+            </div>
+            <div class="text-center footer-logo-items">
+              <a href="">
+                <img class="footer-logo6" src="images/index/vtrue.png" alt="">
+              </a>
+            </div>
+          </div>
         </div>
+        <script>
+          $('.multiple-items').slick({
+            dots: false,
+            infinite: true,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 6,
+                  slidesToScroll: 1,
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 2,
+                }
+              }
+            ]
+          });
+        </script>
         <nav class="header-top bg-secondary">
-            <div class="">
-                <div class="d-md-flex flex-wrap justify-content-around align-items-center">
-                    <div class="text-center top-bar-left">
-                        <a class="text-center" href="">
-                            <p class="mb-1 header-top-border-ct">Cuộc thi</p>
-                            <p class="mb-0 text-size">Chống hàng giả và lừa đảo trực tuyến</p>
-                        </a>
-                    </div>
-                    <div class="text-center top-bar-right">
-                        <a class="text-center" href="">
-                            <p class="mb-1 header-top-border-ctt">Chương trình trao thưởng</p>
-                            <p class="mb-0 text-size">Cào tem chống giả - nhận ngay may mắn</p>
-                        </a>
-
-                    </div>
-                </div>
+          <div class="">
+            <div class="d-md-flex flex-wrap justify-content-around align-items-center">
+              <div class="text-center top-bar-left">
+                <a class="text-center" href="">
+                  <p class="mb-1 header-top-border-ct">Cuộc thi</p>
+                  <p class="mb-0 text-size">Chống hàng giả và lừa đảo trực tuyến</p>
+                </a>
+              </div>
+              <div class="text-center top-bar-right">
+                <a class="text-center" href="">
+                  <p class="mb-1 header-top-border-ctt">Chương trình trao thưởng</p>
+                  <p class="mb-0 text-size">Cào tem chống giả - nhận ngay may mắn</p>
+                </a>
+    
+              </div>
             </div>
+          </div>
         </nav>
-        <nav id="primary-header" class="navbar navbar-expand-lg py-2">
-            <div class="container-fluid padding-side">
-                <div class="d-flex justify-content-between align-items-center w-100 ">
-                    <button class="navbar-toggler border-0 d-flex d-lg-none order-3 p-2 shadow-none" type="button"
-                        data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar"
-                        aria-expanded="false">
-                        <svg class="navbar-icon" width="60" height="60">
-                            <use xlink:href="#navbar-icon"></use>
-                        </svg>
-                    </button>
-                    <div class="header-bottom offcanvas offcanvas-end " id="bdNavbar"
-                        aria-labelledby="bdNavbarOffcanvasLabel">
-                        <div class="offcanvas-header px-4 pb-0">
-                            <button type="button" class="btn-close btn-close-black mt-2" data-bs-dismiss="offcanvas"
-                                aria-label="Close" data-bs-target="#bdNavbar"></button>
-                        </div>
-                        <div class="offcanvas-body align-items-center ">
-                            <ul class="navbar-nav mb-2 mb-lg-0">
-                                <li class="nav-item px-3">
-                                    <a class="nav-link active p-0" aria-current="page" href="index.html">Trang chủ</a>
-                                </li>
-                                <li class="nav-item px-3">
-                                    <a class="nav-link p-0" href="about.html">Giới thiệu</a>
-                                </li>
-                                <li class="nav-item px-3">
-                                    <a class="nav-link p-0" href="list-product.html">Sản phẩm khuyến mãi</a>
-                                </li>
-                                <li class="nav-item px-3">
-                                    <a class="nav-link p-0" href="blog.html">Điểm tin</a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="search  d-none">
-                        <div class="position-relative">
-                            <div class="d-flex">
-                                <div class="me-3 position-relative">
-                                    <img src="images/index/shopping-cart.png" alt="">
-                                    <div class="cart-number">
-                                        2
-                                    </div>
-                                </div>
-                                <span>Giỏ hàng</span>
-                            </div>
-                        </div>
-                    </div>
+        <nav id="primary-header" class="navbar navbar-expand-lg py-md-2 py-0">
+          <div class="container-fluid padding-side">
+            <div class="d-flex justify-content-between align-items-center w-100 ">
+              <button class="navbar-toggler border-0 d-flex d-lg-none order-3 p-md-2 p-0 shadow-none" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false">
+                <svg class="navbar-icon" width="40" height="40">
+                  <use xlink:href="#navbar-icon"></use>
+                </svg>
+              </button>
+              <div class="header-bottom offcanvas offcanvas-end " id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
+                <div class="offcanvas-header px-4 pb-0">
+                  <button type="button" class="btn-close btn-close-black mt-2" data-bs-dismiss="offcanvas"
+                    aria-label="Close" data-bs-target="#bdNavbar"></button>
                 </div>
+                <div class="offcanvas-body align-items-center ">
+                  <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item px-3">
+                      <a class="nav-link active p-0" aria-current="page" href="index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item px-3">
+                      <a class="nav-link p-0" href="about.html">Giới thiệu</a>
+                    </li>
+    
+                    <li class="nav-item px-3">
+                      <a class="nav-link p-0" href="blog.html">Điểm tin</a>
+                    </li>
+    
+                    <li class="nav-item px-3">
+                      <a class="nav-link p-0" href="contact.html">Liên hệ</a>
+                    </li>
+    
+                  </ul>
+                </div>
+              </div>
+              <div class="search  d-none">
+                <div class="position-relative">
+                  <div class="d-flex">
+                    <div class="me-3 position-relative">
+                      <img src="images/index/shopping-cart.png" alt="">
+                      <div class="cart-number">
+                        2
+                      </div>
+                    </div>
+                    <span>Giỏ hàng</span>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </nav>
-    </header>
+      </header>
 
 
     <section>
@@ -441,56 +492,61 @@
 
     <section id="footer">
         <div class="container-fluid padding-side footer-main d-flex flex-column align-items-center" data-aos="fade-up">
-            <h4 class="text-center fw-bold text-white mb-5">BAN TỔ CHỨC</h4>
-            <div class="footer-logo d-flex w-100 justify-content-between">
-                <div class="text-center footer-logo-items">
-                    <div class="footer-logo-items-img">
-                        <img class="footer-logo1" src="images/index/c0f12ca57b4b441b72a46b6e273584dc.jfif" alt="">
-                    </div>
-                    <p class="mb-0">Báo điện tử - Đảng Cộng sản Việt Nam</p>
-                </div>
-
-
-                <div class="text-center footer-logo-items">
-                    <div class="footer-logo-items-img">
-                        <img class="footer-logo2" src="images/index/haiquan.jfif" alt="">
-                    </div>
-                    <p class="mb-0">Tổng cục Hải quan</p>
-                </div>
-
-                <div class="text-center footer-logo-items">
-                    <div class="footer-logo-items-img">
-                        <img class="footer-logo3" src="images/index/dms.png" alt="">
-                    </div>
-                    <p class="mb-0">Tổng cục Quản lý thị trường</p>
-                </div>
-
-                <div class="text-center footer-logo-items">
-                    <div class="footer-logo-items-img">
-                        <img class="footer-logo4" src="images/index/do.jfif" alt="">
-                    </div>
-                    <p class="mb-0">Hiệp hội Chống hàng giả <br> và Bảo vệ người tiêu dùng</p>
-                </div>
-                <div class="text-center footer-logo-items">
-                    <div class="footer-logo-items-img">
-                        <img class="footer-logo5" src="images/index/vnet.png" alt="">
-                    </div>
-                    <p class="mb-0">Công ty Cổ phần VNet</p>
-                </div>
-
-                <div class="text-center footer-logo-items">
-                    <div class="footer-logo-items-img">
-                        <img class="footer-logo6" src="images/index/vtrue.png" alt="">
-                    </div>
-                    <p class="mb-0">Dịch vụ xác thực điện tử VTrue</p>
-                </div>
+          <div class="d-flex flex-column justify-content-center align-items-center mb-md-5 mb-4">
+            <h4 class="text-center fw-bold text-white">BAN TỔ CHỨC</h4>
+          <div class="border-footer">
+            
+          </div>
+          </div>
+          <div class="footer-logo d-flex w-100 justify-content-between">
+            <div class="text-center footer-logo-items">
+              <div class="footer-logo-items-img">
+                <img class="footer-logo1" src="images/index/c0f12ca57b4b441b72a46b6e273584dc.jfif" alt="">
+              </div>
+              <p class="mb-0">Báo điện tử - Đảng Cộng sản Việt Nam</p>
             </div>
+    
+    
+            <div class="text-center footer-logo-items">
+              <div class="footer-logo-items-img">
+                <img class="footer-logo2" src="images/index/haiquan.jfif" alt="">
+              </div>
+              <p class="mb-0">Tổng cục Hải quan</p>
+            </div>
+    
+            <div class="text-center footer-logo-items">
+              <div class="footer-logo-items-img">
+                <img class="footer-logo3" src="images/index/dms.png" alt="">
+              </div>
+              <p class="mb-0">Tổng cục Quản lý thị trường</p>
+            </div>
+    
+            <div class="text-center footer-logo-items">
+              <div class="footer-logo-items-img">
+                <img class="footer-logo4" src="images/index/do.jfif" alt="">
+              </div>
+              <p class="mb-0 footer-hh">Hiệp hội Chống hàng giả <br> và Bảo vệ người tiêu dùng</p>
+            </div>
+            <div class="text-center footer-logo-items">
+              <div class="footer-logo-items-img">
+                <img class="footer-logo5" src="images/index/vnet.png" alt="">
+              </div>
+              <p class="mb-0">Công ty Cổ phần VNet</p>
+            </div>
+    
+            <div class="text-center footer-logo-items">
+              <div class="footer-logo-items-img">
+                <img class="footer-logo6" src="images/index/vtrue.png" alt="">
+              </div>
+              <p class="mb-0">Dịch vụ xác thực điện tử VTrue</p>
+            </div>
+          </div>
         </div>
-
+    
         <div class="container-fluid padding-side footer-end" data-aos="fade-up">
-            © 2024 Vtrue. Designed by TreVN
+          © 2024 Vtrue. Designed by TreVN
         </div>
-    </section>
+      </section>
 
     <script src="js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
