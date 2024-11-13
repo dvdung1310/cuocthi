@@ -104,11 +104,88 @@
     align-items: center;
     padding: 10px 30px;
 }
+.title-time{
+    font-size: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.title-time span{
+    font-size: 18px;
+    background-color: #FFE590;
+    color: #3E3E3E;
+    padding: 5px;
+    font-style: italic;
+    margin-top: -5px;
+    margin-left: 10px;
+}
+.border-cuocthi{
+    background-color:#FFC700;
+    height: 2px;
+    width: 44%;
+}
+.banner-cuocthi{
+    padding: 60px 0;
+}
+.tg-text{
+    font-style: italic;
+    font-size: 19px;
+}
+
+.banner-cuocthi-right-first{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(109.85deg, #EC0000 16.59%, #770000 100%);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.banner-cuocthi-right-first-text1{
+    text-shadow: 0px 8px 10px rgba(120, 0, 0, 0.6);
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.banner-cuocthi-right-first-text2{
+    text-shadow: 0px 20px 20px 0px rgba(120, 0, 0, 2);
+    color: #FFCA00;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+
+
+
+.banner-cuocthi-right-first-text3{
+    text-shadow: 0px 8px 10px rgba(120, 0, 0, 0.6);
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+}
 
 .home-time-item2 {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
     height: 100%;
+    margin-top: 15px;
+}
+
+.banner-cuocthi-left-btn{
+    background-color: #F62717;
+    color: #fff;
+    padding: 8px 28px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
 }
 
 .home-time-item2 .time-count-down {

@@ -177,73 +177,6 @@
   </div>
 
   <header id="header">
-    <div class="header-logo-list d-none">
-      <div class="container d-flex w-100 justify-content-between multiple-items">
-        <div class="text-center footer-logo-items">
-          <a href="">
-            <img class="footer-logo1" src="images/index/c0f12ca57b4b441b72a46b6e273584dc.jfif" alt="">
-          </a>
-        </div>
-        <div class="text-center footer-logo-items">
-          <a href="">
-            <img class="footer-logo2" src="images/index/haiquan.jfif" alt="">
-          </a>
-        </div>
-        <div class="text-center footer-logo-items">
-          <a href="">
-            <img class="footer-logo3" src="images/index/dms.png" alt="">
-          </a>
-        </div>
-        <div class="text-center footer-logo-items">
-         <a href="">
-          <img class="footer-logo4" src="images/index/do.jfif" alt="">
-         </a>
-        </div>
-        <div class="text-center footer-logo-items">
-          <a href="">
-            <img class="footer-logo5" src="images/index/vnet.png" alt="">
-          </a>
-        </div>
-        <div class="text-center footer-logo-items">
-          <a href="">
-            <img class="footer-logo6" src="images/index/vtrue.png" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-    <script>
-      $('.multiple-items').slick({
-        dots: false,
-        infinite: true,
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        responsive: [{
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 6,
-              slidesToScroll: 1,
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 2,
-            }
-          }
-        ]
-      });
-    </script>
     <nav class="header-top bg-secondary">
       <div class="">
         <div class="d-md-flex flex-wrap justify-content-around align-items-center">
@@ -351,35 +284,19 @@
     </nav>
   </header>
 
-  <section class="">
-    <img class="w-100" src="images/banner-no-product.png" alt="">
-  </section>
-
-
-  <section class="mt-4 home-time">
+  <!-- banner -->
+  <section class="banner-cuocthi">
     <div class="container">
-      <p class="text-center mb-1 fw-bold home-timekq">Kỳ quay thưởng sẽ bắt đầu vào</p>
-      <p class="text-center fw-bold home-timedate" style="color:rgba(246, 39, 23, 1)">20h ngày 20/10/2024</p>
-
       <div class="row">
-        <div class="col-md-4 d-none">
-        <div class="col-md-4 d-none">
-          <div class="home-time-item">
-            <div class="fw-bold">
-              <h2 class="fw-bold text-white">SẢN PHẨM KHUYẾN MÃI</h2>
-              <div style="color: rgba(255, 230, 79, 1);" class="text-center">
-                Xem Chi Tiết <img src="images/ArrowLeftvang.svg" alt="">
-              </div>
-            </div>
+        <div class="col-md-6 d-flex flex-column justify-md-content-end justify-content-center">
+          <div class="d-flex flex-column align-items-center">
+            <h2 class="title-time fw-bold">CUỘC THI TUẦN 6 <span>(21/10 - 28/10/2024)</span></h2>
+            <div class="border-cuocthi">
 
-            <div class="d-none">
-              <img src="images/giohangto.svg" alt="">
             </div>
           </div>
-        </div>
-
-        <div class="col-md-6 d-flex justify-md-content-end justify-content-center">
           <div class="home-time-item2">
+            <p class="fw-bold text-center tg-text">Thời gian kết thúc thi</p>
             <div class="d-flex time-count-down-container h-100">
               <div class="d-flex flex-column justify-content-center">
                 <p class="time-count-down">12</p>
@@ -401,70 +318,120 @@
                 <p class="mb-0 time-count-down-text">Giây</p>
               </div>
             </div>
+            <script>
+              const countDownDate = new Date("2024/11/31 23:59:59").getTime();
+              const countdownFunction = setInterval(function () {
+                const now = new Date().getTime();
+                const distance = countDownDate - now;
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                document.querySelectorAll(".time-count-down")[0].innerText = days;
+                document.querySelectorAll(".time-count-down")[1].innerText = hours;
+                document.querySelectorAll(".time-count-down")[2].innerText = minutes;
+                document.querySelectorAll(".time-count-down")[3].innerText = seconds;
+                if (distance < 0) {
+                  clearInterval(countdownFunction);
+                  document.querySelectorAll(".time-count-down").forEach(el => el.innerText = "00");
+                }
+              }, 1000);
+  
+            </script>
           </div>
-          <script>
-            const countDownDate = new Date("2024/11/31 23:59:59").getTime();
-            const countdownFunction = setInterval(function () {
-              const now = new Date().getTime();
-              const distance = countDownDate - now;
-              const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-              const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-              const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-              const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-              document.querySelectorAll(".time-count-down")[0].innerText = days;
-              document.querySelectorAll(".time-count-down")[1].innerText = hours;
-              document.querySelectorAll(".time-count-down")[2].innerText = minutes;
-              document.querySelectorAll(".time-count-down")[3].innerText = seconds;
-              if (distance < 0) {
-                clearInterval(countdownFunction);
-                document.querySelectorAll(".time-count-down").forEach(el => el.innerText = "00");
-              }
-            }, 1000);
 
-          </script>
+          <div class="d-flex flex-column align-items-center mt-4">
+            <button class="banner-cuocthi-left-btn">Vào thi ngay</button>
+          </div>
         </div>
 
-        <div class="col-md-6 d-flex justify-content-start">
-        <div class="col-md-6 d-flex justify-content-start">
-          <div class="home-time-item3 fw-bold px-3 h-100 d-flex align-items-center">
-            <div class="">
-              <div class="home-time-item3ct mb-1">
-                Chương trình diễn ra vào <span>20h</span>
+        <div class="col-md-6">
+          <div class="banner-cuocthi-right">
+              <div class="banner-cuocthi-right-first">
+                  <p class="text-capitalize banner-cuocthi-right-first-text1">chương trình quay thưởng</p>
+                  <p class="banner-cuocthi-right-first-text2">Cào tem chống giả <br> nhận ngay may mắn</p>
+                  <p class="banner-cuocthi-right-first-text3">Năm  2024</p>
               </div>
-              <div class="home-time-item3ct">
-                <span>THỨ BA ĐẦU TIÊN </span> hàng tháng
-              </div>
-
-              <div class="vang-border">
-
-              </div>
-            </div>
           </div>
         </div>
       </div>
-
-      <div class="row d-flex justify-content-center mt-md-5 mt-4">
-        <div class="col-md-4 d-flex justify-content-center">
-          <div class="thamgiacuocthi d-flex align-items-center  w-100">
-            <div class="me-3">
-              <img width="39px" src="images/Plain.svg" alt="">
-            </div>
-
-            <div>
-              <div>
-                Tham gia Cuộc thi
-              </div>
-              <span class="fw-bold">Chống hàng giả và lừa đảo trực tuyến</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="home-time-bottom-kho">
-      <img class="w-100" src="images/bottomkho.svg" alt="">
-    </div>
+    </div>  
   </section>
+
+
+  <!-- logo -->
+  <section class="d-none">
+    <div class="header-logo-list">
+      <div class="container d-flex w-100 justify-content-between multiple-items">
+        <div class="text-center footer-logo-items">
+          <a href="">
+            <img class="footer-logo1" src="images/index/c0f12ca57b4b441b72a46b6e273584dc.jfif" alt="">
+          </a>
+        </div>
+        <div class="text-center footer-logo-items">
+          <a href="">
+            <img class="footer-logo2" src="images/index/haiquan.jfif" alt="">
+          </a>
+        </div>
+        <div class="text-center footer-logo-items">
+          <a href="">
+            <img class="footer-logo3" src="images/index/dms.png" alt="">
+          </a>
+        </div>
+        <div class="text-center footer-logo-items">
+         <a href="">
+          <img class="footer-logo4" src="images/index/do.jfif" alt="">
+         </a>
+        </div>
+        <div class="text-center footer-logo-items">
+          <a href="">
+            <img class="footer-logo5" src="images/index/vnet.png" alt="">
+          </a>
+        </div>
+        <div class="text-center footer-logo-items">
+          <a href="">
+            <img class="footer-logo6" src="images/index/vtrue.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <script>
+      $('.multiple-items').slick({
+        dots: false,
+        infinite: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 6,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 2,
+            }
+          }
+        ]
+      });
+    </script>
+  </section>
+
+
+  
 
   <section class="home-test">
     <div class="container">
