@@ -607,6 +607,14 @@ a.nav-link:hover {
   color: var(--primary-color) !important;
   outline: none;
 }
+a.nav-link .icon{
+  margin-right: 5px;
+  margin-top: -1px;
+}
+
+a.nav-link:hover .icon{
+  color: #FFCA00 !important;
+}
 
 #primary-header .dropdown .search::after {
   content: none;
